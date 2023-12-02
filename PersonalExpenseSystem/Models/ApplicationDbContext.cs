@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PersonalExpenseSystem.Models;
 
 namespace PersonalExpenseSystem.Models
 {
@@ -11,5 +12,6 @@ namespace PersonalExpenseSystem.Models
 
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<Transaction> Categories { get; set; }
+        public DbSet<PersonalExpenseSystem.Models.Category>? Category { get; set; }
     }
 }
