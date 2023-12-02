@@ -12,7 +12,7 @@ using PersonalExpenseSystem.Models;
 namespace PersonalExpenseSystem.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231127163648_Initial Create")]
+    [Migration("20231202180158_Initial Create")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
