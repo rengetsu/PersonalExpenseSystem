@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PersonalExpenseSystem.styles.css" asp-append-version="true" />
     <script src="https://cdn.syncfusion.com/ej2/23.2.4/dist/ej2.min.js"></script>
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/23.2.4/fluent.css" />
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/23.2.4/dist/ej2.min.js"></script>
 </head>
 <body class="e-bigger">
     <header>
@@ -47,6 +51,7 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
-    <ejs-calendar id="calendar"></ejs-calendar>
+    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <ejs-scripts></ejs-scripts>
 </body>
 </html>

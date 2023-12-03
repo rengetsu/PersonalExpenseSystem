@@ -13,17 +13,15 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="mb-3">
-                <label asp-for="CategoryName" class="control-label"></label>
-                <input asp-for="CategoryName" class="form-control" />
+                <ejs-textbox id="Name" placeholder="Category Name" ejs-for="CategoryName" floatLabelType="Always"></ejs-textbox>
                 <span asp-validation-for="CategoryName" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label asp-for="CategoryIcon" class="control-label"></label>
-                <input asp-for="CategoryIcon" class="form-control" />
+                <ejs-textbox id="Icon" placeholder="Icon" ejs-for="CategoryIcon" floatLabelType="Always"></ejs-textbox>
                 <span asp-validation-for="CategoryIcon" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label asp-for="CategoryType" class="control-label"></label>
+                <ejs-textbox id="Type" placeholder="Type" ejs-for="CategoryType" floatLabelType="Always"></ejs-textbox>
                 <input asp-for="CategoryType" class="form-control" />
                 <span asp-validation-for="CategoryType" class="text-danger"></span>
             </div>
