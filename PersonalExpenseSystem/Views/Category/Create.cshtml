@@ -13,7 +13,7 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="mb-3">
-                <div class='e-btn-group'>
+                <div class='e-btn-group custom-rbt-group'>
                     <input type="radio" id="radioleft" name="CategoryType" value="Expense" checked="@(Model.CategoryType=="Expense")" />
                     <label class="e-btn" for="radioleft">Expense</label>
                     <input type="radio" id="radiomiddle" name="CategoryType" value="Income" checked="@(Model.CategoryType=="Income")" />
