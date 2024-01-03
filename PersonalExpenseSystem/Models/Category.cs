@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PersonalExpenseSystem.Models
+namespace Expense_Tracker.Models
 {
     public class Category
     {
@@ -9,12 +9,22 @@ namespace PersonalExpenseSystem.Models
         public int CategoryId { get; set; }
 
         [Column(TypeName = "nvarchar(50)")]
-        public string CategoryName { get; set; }
+        [Required(ErrorMessage = "Title is required.")]
+        public string Title { get; set; }
 
         [Column(TypeName = "nvarchar(5)")]
-        public string CategoryIcon { get; set; } = "";
+        public string Icon { get; set; } = "";
 
         [Column(TypeName = "nvarchar(10)")]
-        public string CategoryType { get; set; } = "Expense";
+        public string Type { get; set; } = "Expense";
+
+        [NotMapped]
+        public string? TitleWithIcon
+        {
+            get
+            {
+                return this.Icon + " " + this.Title;
+            }
+        }
     }
 }

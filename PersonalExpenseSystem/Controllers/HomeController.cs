@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using PersonalExpenseSystem.Models;
+﻿using Expense_Tracker.Models;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace PersonalExpenseSystem.Controllers
+namespace Expense_Tracker.Controllers
 {
     public class HomeController : Controller
     {
